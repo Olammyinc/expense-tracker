@@ -1,19 +1,9 @@
 import { createContext, ReactNode, useReducer } from "react";
 import AppReducer from './AppReducer';
+import { InitialStateType, Transaction } from "../utilities/types";
 //import AddTransaction from "../components/AddTransaction";
 
-interface Transaction {
-    id: number;
-    text: string;
-    amount: number;
-}
 
-interface InitialStateType {
-    transactions: Transaction[];
-    deleteTransaction: (id: number) => void;
-    addTransaction: (transaction: Transaction) => void;
-
-}
 
 // Initial state
 const initialState: InitialStateType = {

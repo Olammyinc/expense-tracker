@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import { GlobalContext, Transaction } from "../context/GlobalState";
+import { GlobalContext } from "../context/GlobalState";
+import { Transaction } from "../utilities/types";
 
 
 interface TransactionProps {

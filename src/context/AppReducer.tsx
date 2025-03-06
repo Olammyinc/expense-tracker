@@ -1,3 +1,4 @@
+import { Transaction } from "../utilities/types";
 
 
 interface State {

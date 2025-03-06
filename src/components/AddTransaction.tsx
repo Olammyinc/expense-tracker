@@ -1,11 +1,11 @@
-import { useState, useContext } from "react";
-import { GlobalContext, Transaction } from "../context/GlobalState";
+import { useState, useContext, FormEvent } from "react";
+import { GlobalContext } from "../context/GlobalState";
 
 const AddTransaction = () => {
   const [text, setText] = useState<string>('');
   const [amount, setAmount] = useState<number>(0);
   const { addTransaction } = useContext(GlobalContext);
-  const onSubmit = (e: FormEvent<HtmlFormElement>) => {
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!text.trim()) return;
